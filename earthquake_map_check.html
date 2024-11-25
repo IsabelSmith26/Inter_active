@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c2098dab187d1f815c4ec86bb6b8c883 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c2098dab187d1f815c4ec86bb6b8c883" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c2098dab187d1f815c4ec86bb6b8c883 = L.map(
+                "map_c2098dab187d1f815c4ec86bb6b8c883",
+                {
+                    center: [37.89576889, -118.61990333333334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f86eaac4a0e40d22e57a73e63711df31 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f86eaac4a0e40d22e57a73e63711df31.addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            var circle_marker_f2b7a8352cd6d14691f3af3566663e48 = L.circleMarker(
+                [37.67, -122.48],
+                {"bubblingMouseEvents": true, "color": "#fde725", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fde725", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_f2b7a8352cd6d14691f3af3566663e48.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1906-0013-USA<br>
+        <strong>Magnitude:</strong> 7.9<br>
+        <strong>Total Deaths:</strong> 700<br>
+        <strong>Total Damage ('000 US$):</strong> 524000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_274c1584d2a603b9a5588c33453e958a = L.circleMarker(
+                [34.25, -119.41],
+                {"bubblingMouseEvents": true, "color": "#25838e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#25838e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.3, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_274c1584d2a603b9a5588c33453e958a.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1925-0005-USA<br>
+        <strong>Magnitude:</strong> 6.3<br>
+        <strong>Total Deaths:</strong> 13<br>
+        <strong>Total Damage ('000 US$):</strong> 8000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b7fb2622aa4761bce0a05deae915b7e = L.circleMarker(
+                [32.733, -115.5],
+                {"bubblingMouseEvents": true, "color": "#63cb5f", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63cb5f", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.2, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_6b7fb2622aa4761bce0a05deae915b7e.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1940-0008-USA<br>
+        <strong>Magnitude:</strong> 7.2<br>
+        <strong>Total Deaths:</strong> 9<br>
+        <strong>Total Damage ('000 US$):</strong> 33000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_491adaa17e5ff7148c40a9ab9a8cfeb8 = L.circleMarker(
+                [47.167, -122.617],
+                {"bubblingMouseEvents": true, "color": "#3fbc73", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3fbc73", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_491adaa17e5ff7148c40a9ab9a8cfeb8.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1949-0006-USA<br>
+        <strong>Magnitude:</strong> 7.0<br>
+        <strong>Total Deaths:</strong> 8<br>
+        <strong>Total Damage ('000 US$):</strong> 25000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c08d26282c6de7ca04ef2f0c6d76570 = L.circleMarker(
+                [34.958, -118.998],
+                {"bubblingMouseEvents": true, "color": "#a2da37", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a2da37", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_4c08d26282c6de7ca04ef2f0c6d76570.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1952-0004-USA<br>
+        <strong>Magnitude:</strong> 7.5<br>
+        <strong>Total Deaths:</strong> 12<br>
+        <strong>Total Damage ('000 US$):</strong> 60000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a80a2a120738650b9f637f2ccd52051 = L.circleMarker(
+                [35.333, -118.917],
+                {"bubblingMouseEvents": true, "color": "#38598c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38598c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_9a80a2a120738650b9f637f2ccd52051.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1952-0006-USA<br>
+        <strong>Magnitude:</strong> 5.8<br>
+        <strong>Total Deaths:</strong> 2<br>
+        <strong>Total Damage ('000 US$):</strong> 10000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ecfeef872dc943499d2772c3d53a7ec = L.circleMarker(
+                [44.712, -111.215],
+                {"bubblingMouseEvents": true, "color": "#77d153", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#77d153", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_3ecfeef872dc943499d2772c3d53a7ec.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1959-0010-USA<br>
+        <strong>Magnitude:</strong> 7.3<br>
+        <strong>Total Deaths:</strong> 28<br>
+        <strong>Total Damage ('000 US$):</strong> 11000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_693539d2f68dbdb3aa9ebaa19cdf164e = L.circleMarker(
+                [47.4, -122.3],
+                {"bubblingMouseEvents": true, "color": "#21a585", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21a585", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_693539d2f68dbdb3aa9ebaa19cdf164e.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1965-0024-USA<br>
+        <strong>Magnitude:</strong> 6.7<br>
+        <strong>Total Deaths:</strong> 7<br>
+        <strong>Total Damage ('000 US$):</strong> 28000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0df18dd0390aa30d628d9a70fecbf3e3 = L.circleMarker(
+                [34.416, -118.37],
+                {"bubblingMouseEvents": true, "color": "#1e9d89", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1e9d89", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.6, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_0df18dd0390aa30d628d9a70fecbf3e3.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1971-0016-USA<br>
+        <strong>Magnitude:</strong> 6.6<br>
+        <strong>Total Deaths:</strong> 65<br>
+        <strong>Total Damage ('000 US$):</strong> 553000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39d9e051847f18af6bec366c5fac7b3d = L.circleMarker(
+                [34.1, -119.0],
+                {"bubblingMouseEvents": true, "color": "#3c4f8a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3c4f8a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.7, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_39d9e051847f18af6bec366c5fac7b3d.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1973-0148-USA<br>
+        <strong>Magnitude:</strong> 5.7<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 1000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aeec56272ca0b563c76dd3f6de80ad68 = L.circleMarker(
+                [42.06, -122.55],
+                {"bubblingMouseEvents": true, "color": "#2f6b8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f6b8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_aeec56272ca0b563c76dd3f6de80ad68.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1975-0155-USA<br>
+        <strong>Magnitude:</strong> 6.0<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 1000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_14f912ef4e7e8a83f102878602832efc = L.circleMarker(
+                [36.219, -120.317],
+                {"bubblingMouseEvents": true, "color": "#481a6c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#481a6c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_14f912ef4e7e8a83f102878602832efc.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1983-0174-USA<br>
+        <strong>Magnitude:</strong> 5.2<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 31000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4ebcd8b7ab4135c53cb5f8852c10c9b3 = L.circleMarker(
+                [44.058, -113.857],
+                {"bubblingMouseEvents": true, "color": "#31b57b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31b57b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_4ebcd8b7ab4135c53cb5f8852c10c9b3.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1983-0514-USA<br>
+        <strong>Magnitude:</strong> 6.9<br>
+        <strong>Total Deaths:</strong> 2<br>
+        <strong>Total Damage ('000 US$):</strong> 15000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5af8ec8e23d29f330f1d63b0e8b42586 = L.circleMarker(
+                [32.978, -117.858],
+                {"bubblingMouseEvents": true, "color": "#404588", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#404588", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_5af8ec8e23d29f330f1d63b0e8b42586.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1986-0177-USA<br>
+        <strong>Magnitude:</strong> 5.6<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 720<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92cacb760705bd96695e5a41f46c45e5 = L.circleMarker(
+                [34.061, -118.079],
+                {"bubblingMouseEvents": true, "color": "#33628d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33628d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_92cacb760705bd96695e5a41f46c45e5.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1987-0179-USA<br>
+        <strong>Magnitude:</strong> 5.9<br>
+        <strong>Total Deaths:</strong> 8<br>
+        <strong>Total Damage ('000 US$):</strong> 213000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8b2d49dc186e5ab05691ffc15fa3be4 = L.circleMarker(
+                [37.036, -121.88],
+                {"bubblingMouseEvents": true, "color": "#31b57b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31b57b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_f8b2d49dc186e5ab05691ffc15fa3be4.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1989-0133-USA<br>
+        <strong>Magnitude:</strong> 6.9<br>
+        <strong>Total Deaths:</strong> 62<br>
+        <strong>Total Damage ('000 US$):</strong> 5600000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8514dd9754a4e6bf167fef3a918cdb8 = L.circleMarker(
+                [34.14, -117.7],
+                {"bubblingMouseEvents": true, "color": "#443b84", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#443b84", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_f8514dd9754a4e6bf167fef3a918cdb8.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1990-0187-USA<br>
+        <strong>Magnitude:</strong> 5.5<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 12700<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9e57cf126194757373572842a131c521 = L.circleMarker(
+                [34.1, -118.09],
+                {"bubblingMouseEvents": true, "color": "#38598c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38598c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_9e57cf126194757373572842a131c521.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1991-0192-USA<br>
+        <strong>Magnitude:</strong> 5.8<br>
+        <strong>Total Deaths:</strong> 2<br>
+        <strong>Total Damage ('000 US$):</strong> 33500<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_778c3c78ecd9762d951f03d95570d9f3 = L.circleMarker(
+                [40.415, -124.603],
+                {"bubblingMouseEvents": true, "color": "#31b57b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31b57b", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_778c3c78ecd9762d951f03d95570d9f3.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1992-0120-USA<br>
+        <strong>Magnitude:</strong> 6.9<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 75000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_925526c2ed96836ba5ad0d3cb771a1b7 = L.circleMarker(
+                [34.0, -118.15],
+                {"bubblingMouseEvents": true, "color": "#8bd646", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8bd646", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_925526c2ed96836ba5ad0d3cb771a1b7.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1992-0215-USA<br>
+        <strong>Magnitude:</strong> 7.4<br>
+        <strong>Total Deaths:</strong> 1<br>
+        <strong>Total Damage ('000 US$):</strong> 100000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c9c81a533ee066399773c29bdc8c0a35 = L.circleMarker(
+                [33.961, -116.32],
+                {"bubblingMouseEvents": true, "color": "#297b8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#297b8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_c9c81a533ee066399773c29bdc8c0a35.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1992-0554-USA<br>
+        <strong>Magnitude:</strong> 6.2<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 100000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2a54bbce8e9d206c6000602eed79c61e = L.circleMarker(
+                [42.314, -122.01],
+                {"bubblingMouseEvents": true, "color": "#38598c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#38598c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_2a54bbce8e9d206c6000602eed79c61e.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1993-0480-USA<br>
+        <strong>Magnitude:</strong> 5.8<br>
+        <strong>Total Deaths:</strong> 2<br>
+        <strong>Total Damage ('000 US$):</strong> 7500<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_30faaca0f3fe34744db35ed0cdc4bcf1 = L.circleMarker(
+                [34.17, -118.27],
+                {"bubblingMouseEvents": true, "color": "#482576", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#482576", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_30faaca0f3fe34744db35ed0cdc4bcf1.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 1994-0599-USA<br>
+        <strong>Magnitude:</strong> 5.3<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 2100<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3afd42214729aaa40293ee9c96232131 = L.circleMarker(
+                [47.149, -122.7266667],
+                {"bubblingMouseEvents": true, "color": "#26ad81", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#26ad81", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.8, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_3afd42214729aaa40293ee9c96232131.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2001-0099-USA<br>
+        <strong>Magnitude:</strong> 6.8<br>
+        <strong>Total Deaths:</strong> 1<br>
+        <strong>Total Damage ('000 US$):</strong> 2000000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1255d22fe5cf29dff809a076103a1a41 = L.circleMarker(
+                [35.7005, -121.1005],
+                {"bubblingMouseEvents": true, "color": "#1f948c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f948c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_1255d22fe5cf29dff809a076103a1a41.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2003-0623-USA<br>
+        <strong>Magnitude:</strong> 6.5<br>
+        <strong>Total Deaths:</strong> 2<br>
+        <strong>Total Damage ('000 US$):</strong> 200000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f65837765eb56e3c648bdb75cd04c9ff = L.circleMarker(
+                [41.1444, -114.8721],
+                {"bubblingMouseEvents": true, "color": "#33628d", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#33628d", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_f65837765eb56e3c648bdb75cd04c9ff.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2008-0099-USA<br>
+        <strong>Magnitude:</strong> 5.9<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 0<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b70ed37cbdd3a83dbb3740214ca30805 = L.circleMarker(
+                [40.652, -124.6925],
+                {"bubblingMouseEvents": true, "color": "#1f948c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f948c", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_b70ed37cbdd3a83dbb3740214ca30805.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2010-0027-USA<br>
+        <strong>Magnitude:</strong> 6.5<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 12500<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9d8801245184a4a8b9cf844a9ae7c24 = L.circleMarker(
+                [38.2151667, -122.3123333],
+                {"bubblingMouseEvents": true, "color": "#2e6d8e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2e6d8e", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.02, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_b9d8801245184a4a8b9cf844a9ae7c24.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2014-0318-USA<br>
+        <strong>Magnitude:</strong> 6.02<br>
+        <strong>Total Deaths:</strong> 1<br>
+        <strong>Total Damage ('000 US$):</strong> 700000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_06fc681e86e3bb7818dbbabe2d414222 = L.circleMarker(
+                [35.991, -96.803],
+                {"bubblingMouseEvents": true, "color": "#440154", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#440154", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_06fc681e86e3bb7818dbbabe2d414222.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2016-0493-USA<br>
+        <strong>Magnitude:</strong> 5.0<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 20000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f9542e2d0efb1174bd9badd0954e3683 = L.circleMarker(
+                [35.77, -117.599],
+                {"bubblingMouseEvents": true, "color": "#50c46a", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#50c46a", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.1, "stroke": true, "weight": 3}
+            ).addTo(map_c2098dab187d1f815c4ec86bb6b8c883);
+        
+    
+            circle_marker_f9542e2d0efb1174bd9badd0954e3683.bindTooltip(
+                `<div>
+                     
+        <strong>Disaster ID:</strong> 2019-0306-USA<br>
+        <strong>Magnitude:</strong> 7.1<br>
+        <strong>Total Deaths:</strong> 0<br>
+        <strong>Total Damage ('000 US$):</strong> 200000<br>
+        
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
